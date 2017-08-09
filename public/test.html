@@ -1,0 +1,86 @@
+<<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Da burgers</title>
+    <link rel="stylesheet" type="text/css"  href="public/assets/css/burger_style.css">
+ <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="background"</div>
+  <img id="burger" src="/assets/img/burgure.jpg">
+    <h1>Eat-Da-Burger!</h1>
+      <form class="create-update-form" action="/">
+        <div class="form-group">
+          <label for="bur"></label>
+          <input type="text" id="bur" name="burger_name" placeholder="Wow...it tasts good!">
+        </div>
+          <button class="button" type="submit">Submit</button>
+            <h4>Enter a burger you want to eat Click the "Submit" button</h4>
+      </form>
+
+
+<div class="row">
+  <div class="col-lg-6">
+    <div class="panel panel-default" id="burgers">
+      <div class="panel-body"></div>
+        <div id="left">
+          <ol>
+            <li>
+              <div class="text">
+                <form>
+                  <input type="hidden" name="devoured" value="true">
+                    <button class="devour" type="submit">Devour it!</button>
+                </form><br>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+  </div>
+</div>
+
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="panel panel-default" id="devoured">
+        <div class="panel-body"></div>
+        <div id="right">
+          <ol>
+            <li>
+              <form>
+                <input type="hidden" name="devoured" value="false">
+              </form><br>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
